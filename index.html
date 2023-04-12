@@ -1,13 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
 </head>
 <body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo" />
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Front-end Designer</p>
+                <h1>Hello, I'm <span>Yenuli</span> <br>from Sri Lanka</h1>
+            </div>
+        </div>
+    </div>
+
+<!-- about -->
+
+    <div id="about ">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png">
+                </div>    
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>I'm Yenuli Chamodya, a front-end designer from Sri Lanka.
+                    Passionate about eye catchy and user-friendly websites and applications.
+                    I specialize in bringing designs to life with clean, modern code and a 
+                    focus on user experience. I'm excited to make the leap and continue 
+                    refining my skills with right company. Thanks for checking out my portfolio!</p>
+                    
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('certification')">Certification</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Figma</li>
+                            <li><span>Front end Development</span><br>HTML,CSS,JS</li>
+                            <li><span>Back end Development</span><br>Python,Django,MySQL</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="certification">
+                        <ul>
+                            <li><span>2021</span><br>Cloud Computing Applications, Part 1: Cloud Systems and Infrastructure</li>
+                            <li><span>2021</span><br>Build Photo Gallery Mobile App With Flutter</li>
+                            <li><span>2023</span><br>Web Programming Foundations</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2016</span><br>Passed O/L with 9As</li>
+                            <li><span>2019</span><br>Passed A/L with 3Cs in Applied Science</li>
+                            <li><span>2024</span><br>Gratuate in BSc(Hons)in Information Technology in Software 
+                                Engineering, SLTC-</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     
+
 </body>
 </html>
